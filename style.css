@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --whitecolor: #fefefe;
+    --bigheadercolor: #CCD6F6;
+    --secondarycolor: #4343DF;
+    --thirdcolor: #2C6352;
+
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bigheadercolor);
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondarycolor);
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* designing the nav bar */
+
+nav {
+    background-color: var(--secondarycolor);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px 0px 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu > img {
+    height: 35px;
+}
+.menu > img:hover {
+    cursor: pointer;
+}
+.menutems {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    padding-right: 15px;
+    margin: 0px;
+}
+  
+.menutems li {
+    margin-right: 10px;
+    font-size: 20px;
+    padding: 3px 7px 3px 7px;
+}
+
+.menutems li:hover,
+.menutems li.active {
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    color: var(--secondarycolor);
+}
+
+.logo > img {
+    height: 50px;
+    margin-top: 7px;
+}
+
+.logo > img:hover {
+    cursor: pointer;
+}
